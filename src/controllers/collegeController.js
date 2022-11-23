@@ -78,14 +78,3 @@ const getCollegeDetail = async function(req,res){
 }
 module.exports.createCollege = createCollege
 module.exports.getCollegeDetail = getCollegeDetail
-
-
-// const crateData = async function(req,res){
-//     const {name, mobile, email, collegeName} = req.body
-
-//     const collegeDetail = await collegeModel.findOne({name:collegeName})
-//     const collegeId = collegeDetail._id
-
-//     req.body.collegeId = collegeId
-//     const internCreate = await internModel.create(req.body)
-// }
