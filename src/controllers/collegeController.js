@@ -12,13 +12,13 @@ const createCollege = async function(req,res){
         if(Object.keys(req.body).length==0){return res.status(400).send({status:false,message:"Body is empty"})}
     
         /*------------------------Checking fileds are present or not-----------------------------------*/
-        if(!name){return res.status(400).send({status:false,message:"name.... is required"})}
+        if(!name){return res.status(400).send({status:false,message:"name is required"})}
         if(!fullName){return res.status(400).send({status:false,message:"full name is required"})}
         if(!logoLink){return res.status(400).send({status:false,message:"logo link is required"})}
         if(isDeleted){return res.status(400).send({status:false, msg:"This must be false at the time of creation"})}
 
         /*------------------------Checking fileds values are empty or not-----------------------------------*/
-        if(!(isEmpty(name))){return res.status(400).send({status:false,message:"Name is required....."})} 
+        if(!(isEmpty(name))){return res.status(400).send({status:false,message:"Name is required"})} 
         if(!(isEmpty(fullName))){return res.status(400).send({status:false,message:"Full Name is required"})}
         if(!(isEmpty(logoLink))){return res.status(400).send({status:false,message:"Logo link is required"})}
     

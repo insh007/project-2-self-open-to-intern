@@ -27,6 +27,12 @@ const isValidMobile = function(number){
     const regex =  /[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     return regex.test(number)
 }
+     /* Example of mobile valid Numbers  +919367788755
+                                         89898293041
+                                         918765431234
+                                         +16308520397
+                                         786-307-3615 
+                                         */
 
 const isEmpty = function(value){
     // if(typeof(value) === undefined || value === null) {return false};
